@@ -1,4 +1,4 @@
-== Déroulé de la formation
+== Automatiser son infrastructure réseau avec Ansible
 
 === Licence
 
@@ -6,18 +6,57 @@ link:https://creativecommons.org/licenses/by-sa/4.0/deed.fr[CC-BY-SA 4.0]
 
 === Chapeau
 
-Texte qui valorise la formation qui se base sur une version synthétique de link:1_presentation.mm[la carte mentale de présentation]
+Ansible, logiciel libre créé en 2012 et maintenu par la société RedHat excelle
+dans l'automatisation des infrastructures. Grâce à ses 2000 modules et à sa
+communauté de 4000 contributeurs, il est utilisé dans les domaines suivants :
+serveurs, virtualisation, cloud, conteneurs et équipements réseaux. Sa
+simplicité, son apprentissage rapide et son architecture sans agent en font un
+incontournable. Le nombre d'équipements réseaux supportés ainsi que la reprise
+des concepts appliqués aux serveurs font d'Ansible un critère de choix pour
+automatiser son infrastructure réseau.
+
+* Fiche produit de l'automatisation réseau par Ansible : https://www.ansible.com/products/network-automation
+* Liste des modules réseaux : https://docs.ansible.com/ansible/latest/modules/list_of_network_modules.html
+* Vidéo de démonstration d'automatisation réseau (15 minutes) : https://www.ansible.com/resources/videos/network-automation-with-red-hat-ansible-engine-for-beginners
+
+=== Intervenant
+
+Nicolas Quiniou-Briand est formateur et consultant en logiciels libres
+d'infrastructure avec un intérêt fort pour l'automatisation. Dans le cadre de
+son travail sur le logiciel PacketFence, il utilise Ansible pour déployer des
+serveurs ainsi que des équipements réseaux divers.
+
 
 === Résumé de la formation
 
-Logiciel::
-Durée::
+Logiciels:: Ansible, Jinja2, SSH, NETCONF, RESTCONF, GNS3
+Durée:: deux journées
 Objectifs::
-Public::
-Pré-requis::
-Pédagogie::
-Mots-clés::
+. Découvrir les nouveaux modes d'administration des équipements réseaux
+. Utiliser des modules et des rôles Ansible pour administrer des équipements réseaux
+Public:: Administrateur systèmes et réseaux, ingénieurs réseaux, intégrateurs
+Pré-requis:: Bases d'Ansible
+Pédagogie:: Cours et travaux pratiques
+Mots-clés:: Automatisation réseau, conformité, DevOps, Intent-Driven Networking
 
 === Programme de la formation
 
-Utiliser des mots-clés fonctionnels et métiers.
+. L'évolution de l'administration des équipements réseaux
+.. Au commencement : la ligne de commande (CLI)
+.. YANG : le langage de modélisation des données
+.. NETCONF, RESTCONF et les API : les nouvelles méthodes d'administration
+
+. L'automatisation réseau avec Ansible
+.. Présentation et rappels sur Ansible
+.. Ansible : quels usages avec les équipements réseaux ?
+.. Spécificités de l'automatisation réseau avec Ansible
+
+. Travaux pratiques avec Ansible et des équipements réseaux divers
+.. Sauvegarder et restaurer un équipement réseau
+.. Collecter des informations sur un équipement réseau
+.. Déployer une configuration basée sur un modèle
+.. Conduire un changement de configuration
+.. Vérifier la conformité des configurations en place
+
+Tous les travaux pratiques sont réalisés à partir d'un environnement reproductible défini via le logiciel libre GNS3.
+Il permet d'émuler des équipements réseaux de différents constructeurs et de virtualiser un contrôleur Ansible.
