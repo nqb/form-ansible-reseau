@@ -1,6 +1,6 @@
-= Titre formation
+= Automatiser son infrastructure réseau avec Ansible
 Nicolas Quiniou-Briand <nqb@azyx.fr>
-v1.0, org-time-stamp
+v1.0, <2019-04-05 Fri>
 // this attributes need to be in preamble
 :toc:
 :toclevels: 1
