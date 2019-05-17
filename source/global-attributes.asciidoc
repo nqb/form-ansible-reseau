@@ -2,6 +2,8 @@
 :sectanchors:
 :sectlinks:
 :source-highlighter: coderay
+// add line number for source code
+:source-linenums-option:
 //:source-highlighter: prettify
 // to have beautiful icons for callouts
 // commented due to wrong icons for admonition blocks
@@ -9,10 +11,10 @@
 // :data-uri:
 
 // custom attributes
-:logiciel: nom_logiciel
-:version: 0.1
+:logiciel: Ansible
+:version: 2.8
 :editeur: azyx
-:latest: 0.1.5
+:latest: FIXME
 :demosdir: demos
 :exosdir: exercices
 :sltionsdir: solutions

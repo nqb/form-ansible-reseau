@@ -1,14 +1,114 @@
 == Écriture
 
+=== Carte mentale
+
+Réalisation d'une carte mentale pour défricher le sujet dans un premier temps.
+
+Permet de stocker des liens très facilement et d'avoir des mots clés.
+
+Voir aussi une carte de brainstorming pour les idées.
+
+=== Objectifs pédagogiques
+
+
+. Configurer un équipement réseau de zéro à partir d'un modèle
+. Sauvegarder sa configuration
+. collecter les "facts" et les ajouter à un inventaire
+. gérer un changement sur l'équipement réseau
+.. mise à jour du firmware
+.. nouvelle fonctionnalité
+.. changement opérationnel
+. sauvegarder la nouvelle configuration
+
 === Programme
 
-Aspects multiples et *public* multiples
-* Installation / Intégration en environnement varié
-* Exploitation
-* Développement
-* Sécurité
-* Migration
+Recommandations:
+* ETRE EXHAUSTIF : couvrir tous les cas
+* Croiser les apprentissages:
+** Utiliser des modules courant d'Ansible + ceux qui sont liés au réseau (être créatif)
 
-Anticiper les besoins et les cas d'usages (simples et complexes).
 
-Savoir défendre les logiciels.
+
+
+. Ansible et Ansible pour le réseau
+.. Rappel sur le logiciel Ansible (Présentation)
+.. Pourquoi automatiser le réseau
+... 1 seul outil
+... reproductible
+... validation/conformité
+.. Présentation de la partie réseau
+... périmètre, fonctionnalités (tower+AWX), modules
+
+* Les spécificités du réseau avec Ansible
+
+. Environnement de travail
+.. TP: Premier playbook pour sauvegarder ses équipements réseaux
+... Cisco
+... VyOS
+
+Prévoir d'utiliser deux modules bien distincts: agnostic vs vendor specific pour être exhaustif.
+
+Modules agnostiques:
+* cli_command
+* cli_config
+Limitation: network_cli plugin uniquement
+
+Comment supporter de nouveaux équipements ?
+
+. Les nouvelles façons de faire du réseau
+.. YANG
+.. NetConf
+
+. TP
+.. collecte facts
+.. inventaire dynamique : récupéré l'inventaire depuis ? GLPI ?
+.. SNMP pour supervision : zabbix ?
+
+(Revoir ma carte de brainstorming du réseau)
+
+
+. Présentation d'Ansible
+
+. Ansible pour les équipements réseaux
+.. Notions
+
+. Démarrage environnement
+
+
+
+* Idées
+** Restaurer après une panne générale
+** Ajouter une nouvelle fonctionnalité (exemple: syslog)
+** Stockage des mots de passe pour les équipements réseaux
+** Zero config : sortir un équipement du carton et le regarder se déployer
+
+Config courante:
+* config SNMP
+* déployer un firewall
+* ACL
+
+Rôles déjà existant
+
+
+Bye bye CLI, hello API
+
+Plan:
+* ancien modèle
+* nouveau modèle
+
+Pourquoi ?
+
+=== Environnement
+
+Déjà des choses de faites dans le projet linklight.
+
+On peut s'en inspirer.
+
+* VyOS me semble intéressant pour commencer
+* Cisco parle à beaucoup de monde
+* Tower ou plutôt AWX peut être une option intéressante pour présenter les fonctionnalités avancées
+
+
+=== Travaux pratiques
+
+* Appliquer une politique de sécurité (guide ANSSI sur les commutateurs)

@@ -4,3 +4,6 @@
 === Références
 
 See https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#bibliography
+
+- [[[1]]]livre sur automatisation du réseau avec Ansible: https://automatisation.pressbooks.com/
+- [[[2]]]ansible-network roles: https://galaxy.ansible.com/ansible-network
